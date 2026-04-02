@@ -5,7 +5,7 @@ const doc = {
     title: 'Mini Event Management API',
     description: 'API for events, bookings and attendance'
   },
-  host: 'localhost:4000'
+  host: 'https://ticketbookingsystem-kf4g.onrender.com'
 };
 
 const outputFile = './src/swagger.json';
