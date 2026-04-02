@@ -5,7 +5,7 @@
     "description": "API for events, bookings and attendance",
     "version": "1.0.0"
   },
-  "host": "localhost:4000",
+  "host": "https://ticketbookingsystem-kf4g.onrender.com",
   "basePath": "/",
   "schemes": [
     "http"
