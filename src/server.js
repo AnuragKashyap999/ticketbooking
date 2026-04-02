@@ -6,6 +6,8 @@ import bookingsRoute from './routes/bookings.route.js';
 import attendanceRoute from './routes/attendance.route.js';
 import swaggerUi from 'swagger-ui-express';
 import fs from 'fs';
+import cors from 'cors';
+
 
 const swaggerFile = JSON.parse(
   fs.readFileSync('./src/swagger-output.json', 'utf-8')
@@ -23,6 +25,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
+app.use(cors(corsOptions));
 
 
 app.use('/api/v1/user', usersRoute);
